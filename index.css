@@ -1,0 +1,678 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    
+    font-family: Raleway;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 100;
+    src: url('./Raleway-Regular.ttf');
+}
+
+
+#home {
+    position: relative;
+    z-index: 0;
+    
+}
+
+
+.introduction {
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+#name {
+    color: blue;
+}
+
+
+#work-btn, #work-btn-mobile {
+    background: transparent;
+    font-size: 120%;
+    border: 3px solid white;
+    padding: 6px 7px 6px 19px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+
+#work-btn:hover, #work-btn-mobile:hover {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    transition: 0.5s linear;
+}
+
+.overlay button:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.25s linear;
+}
+
+.view-btn {
+    background-color: blue;
+    border-radius: 0px;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: white;
+    border-radius: 0px;
+    color: blue;
+}
+
+.flip { 
+    transform: rotate(90deg);
+}
+
+.fa-caret-right {
+    padding: 6px;
+    transition: 0.15s linear;
+}
+
+
+
+.header-div {
+    width: 300px;
+    border-bottom: 3px solid darkgray !important;
+    color: rgb(69, 71, 74);
+
+}
+
+h2 {
+    color: rgb(69, 71, 74);
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+h4 {
+    color: rgb(98, 98, 98);
+    font-weight: bolder;
+}
+
+nav li a {
+    color: white !important;
+    font-size: 16px !important;
+}
+
+nav li a:hover {
+    color: blue !important;
+    transition: 0.3s linear;
+}
+
+#navbarNav {
+    width: 100%;
+    
+}
+
+nav {
+    z-index: 1;
+    height: auto;
+    border-bottom: 3px solid blue !important;
+    background-color: rgb(27, 36, 47);
+}
+
+#headshot {
+    border-radius: 100%;
+}
+
+.progress {
+    height: 1.7rem;
+}
+
+.percentage {
+    background-color: rgb(red, green, blue);
+    font-size: 14px;
+}
+
+.skill {
+    font-size: 150%;
+    background-color: rgb(105, 70, 147);
+}
+
+.skill-title {
+    
+}
+
+.about-icon {
+    max-width: 50%;
+}
+
+#fast {
+    position: relative;
+    animation: fast 0.6s ease-in;
+    animation-delay: 0s;
+}
+
+@keyframes fast {
+    from {transform: rotateY(90deg);}
+    to {transform: rotateY(0deg);}
+    
+}
+
+#fast-div {
+    position: relative;
+    animation: fast-div 0.6s ease-in;
+    animation-delay: 0s;
+}
+
+@keyframes fast-div {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+#responsive {
+    position: relative;
+    animation: responsive 0.6s ease-in;
+    animation-delay: 0.5s;
+}
+
+@keyframes responsive {
+    from {transform: rotateY(90deg);}
+    to {transform: rotateY(0deg);}
+    
+}
+
+#responsive-div {
+    position: relative;
+    animation: responsive-div 0.6s ease-in;
+    animation-delay: 0.5s;
+}
+
+@keyframes responsive-div {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+#intuitive {
+    position: relative;
+    animation: intuitive 0.6s ease-in;
+    animation-delay: 1s;
+}
+
+@keyframes intuitive {
+    from {transform: rotateY(90deg);}
+    to {transform: rotateY(0deg);}
+}
+
+#intuitive-div {
+    position: relative;
+    animation: intuitive-div 0.6s ease-in;
+    animation-delay: 1s;
+}
+
+@keyframes intuitive-div {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#dynamic {
+    position: relative;
+    animation: dynamic 0.6s ease-in;
+    animation-delay: 1.5s;
+}
+
+@keyframes dynamic {
+    from {transform: rotateY(90deg);}
+    to {transform: rotateY(0deg);}
+    
+}
+
+#dynamic-div {
+    position: relative;
+    animation: dynamic-div 0.6s ease-in;
+    animation-delay: 1.5s;
+}
+
+@keyframes dynamic-div {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+.flip-in {
+    transform: rotateY(180deg);
+}
+
+.about-container {
+    background-color: white;
+    
+}
+
+.projects-container {
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+/*.project-hover {
+    position: relative;
+    opacity: 0;
+    animation: project 0s ease-out;
+}
+
+@keyframes project {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}*/
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s linear;
+    background-color: white;
+  }
+  
+  #thumb-1:hover .overlay, #thumb-2:hover .overlay, #thumb-3:hover .overlay, #thumb-4:hover .overlay, #thumb-5:hover .overlay, #thumb-6:hover .overlay {
+    opacity: 1;
+  }
+   
+  .text {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .languages {
+      font-weight: 100;
+      color: blue;
+      font-size: 16px;
+  }
+
+  .overlay button { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 0px;
+  }
+
+.web {
+    background-image: url('./jumbotron.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.mobile {
+    display: none !important;
+}
+
+.hide {
+    display: none;
+}
+
+.learn-more {
+    background: transparent;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects {
+    margin: 0 70px;
+}
+
+.tiles {
+    margin: 0 -15px;
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;    
+}
+
+.modal-header {
+    border: none;
+}
+
+.tagline {
+    border-bottom: 1px solid grey;
+}
+
+.contact-container {
+    height: 228px;
+    width: 100%;
+    padding: 90px 0;
+    background-color: rgb(27, 36, 47);
+}
+
+.contact-icon {
+    background-color: rgb(38, 47, 56);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+i {
+    width: 50px;
+}
+
+#email-icon {
+    width: 100%;
+    max-width: 100px;
+}
+
+#top-icon {
+    position: relative;
+    bottom: -30px;
+    width: 50px;
+    background-color: blue;
+}
+
+footer {
+    color: rgb(77, 87, 99);
+}
+
+#copyright {
+    color: blue;
+}
+/* Media Queries */
+
+
+@media (max-width: 499.98px) { 
+ 
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+        background-image: url('./jumbotron-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        
+    }
+
+    h1 {
+        font-size: 22px;
+        max-width: 80%;
+        margin: 0 auto 10px auto;
+    }
+
+    .introduction {
+        z-index: 1;
+        color: white;
+        padding: 35% 0;
+        text-align: center;
+    }
+    
+    .header-div {
+        width: 300px;
+        border-bottom: 3px solid black;
+        max-width: 15%;
+    }
+
+        
+    #name {
+        color: blue;
+    }
+    
+    
+    #work-btn-mobile {
+        background: transparent;
+        font-size: 120%;
+        border: 3px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+    
+    #headshot {
+        max-width: 70%;
+    }
+
+    .bio {
+        text-align: left;
+        margin: 0 -10%;
+    }
+
+    .projects {
+        margin: 0;
+    }
+    
+  }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 500px) and (max-width: 767.98px) { 
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+        background-image: url('./jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .introduction {
+        z-index: 1;
+        color: white;
+        padding: 120px 0;
+        text-align: center;
+    }
+
+
+    .header-div {
+        width: 300px;
+        border-bottom: 3px solid black;
+        max-width: 9%;
+    }
+
+        
+    #name {
+        color: blue;
+    }
+    
+    
+    #work-btn-mobile {
+        background: transparent;
+        font-size: 120%;
+        border: 3px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+    .bio {
+        text-align: left;
+        margin: 0 -5%;
+    }
+
+    .projects {
+        margin: 0;
+    }
+
+    .tiles {
+        max-width: 50%;
+        padding: 0;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+    .web {
+        display: block !important;
+        background-image: url('./jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .introduction {
+        z-index: 1;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+
+    .header-div {
+        width: 300px;
+        border-bottom: 3px solid black;
+        max-width: 4%;
+    }
+
+        
+    #name {
+        color: blue;
+    }
+    
+    
+    #work-btn {
+        background: transparent;
+        font-size: 120%;
+        border: 3px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+    .projects {
+        margin: 0 20px;
+    }
+
+    .tiles {
+        margin: 0;
+        padding: 0;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+ 
+    .web {
+        background-image: url('./jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .introduction {
+        z-index: 1;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+
+    .header-div {
+        width: 300px;
+        border-bottom: 3px solid black;
+        max-width: 4%;
+    }
+
+       
+    #name {
+        color: blue;
+    }
+    
+    
+    #work-btn {
+        background: transparent;
+        font-size: 120%;
+        border: 3px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+.skills-container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+    .projects {
+        margin: 0;
+    }
+
+    .tiles {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    .web {
+        background-image: url('./jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .introduction {
+        z-index: 1;
+        color: white;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .header-div {
+        width: 300px;
+        border-bottom: 3px solid black;
+        max-width: 4%;
+    }
+    
+        
+    #name {
+        color: blue;
+    }
+    
+    
+    #work-btn {
+        background: transparent;
+        font-size: 120%;
+        border: 3px solid white;
+        color: white;
+        cursor: pointer;
+    }
+ }

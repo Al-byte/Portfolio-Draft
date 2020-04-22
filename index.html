@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Alex Washington Portfolio</title>
+</head>
+<body>
+  <div class="row text-center web d-flex" id="home">
+  <!--<img src="./jumbotron.jpg" id="home-img-web">-->
+    <div class="col introduction flex-grow-1">
+      <h1>Hello, I'm <span id="name">Alex Washington</span>.
+        <br>I'm a front end web developer.</h1>
+        <div class="row">
+          <div class="col mt-2 work-btn">
+            <a href="#about-container">
+              <button id="work-btn">View my work <i class="fa fa-caret-right"></i></button>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row text-center mobile d-flex" id="home">
+  <!--  <img src="./jumbotron-mobile.jpg" class="flex-grow-1">-->
+    <div class="col introduction flex-grow-1">
+      <h1>Hello, I'm <span id="name">Alex Washington</span>.
+        <br>I'm a front end web developer.</h1>
+        <div class="row">
+          <div class="col">
+            <a href="#about-container"><button id="work-btn-mobile">View my work <i class="fa fa-caret-right"></i></button></a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<!--Navbar - Start -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button id="toggle-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item active">
+            <a id="nav-home" class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-about" class="nav-link" href="#about-container">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-portfolio" class="nav-link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-contact" class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Navbar - End -->
+  
+    <div class="about-container" id="about-container">
+      <div class="row text-center my-4 py-5" id="about">
+        <div class="col">
+          <div id="about" class="header-div mx-auto d-flex justify-content-center">
+            <h2>ABOUT</h2>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-6 col-md" id="fast-div">
+              <img src="./hex-1.jpg" id="fast" class="about-icon">
+              <h4 class="pt-2">Fast</h4>
+              <p><span>Lorem ipsum dolor sit amet consectetur.</span>
+                <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-6 col-md" id="responsive-div">
+              <img src="./hex-2.jpg" id="responsive" class="about-icon">
+              <h4 class="pt-2">Responsive</h4>
+              <p><span>Lorem ipsum dolor sit amet consectetur.</span>
+                <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-6 col-md" id="intuitive-div">
+              <img src="./hex-3.jpg" id="intuitive" class="about-icon">
+              <h4 class="pt-2">Intuitive</h4>
+              <p><span>Lorem ipsum dolor sit amet consectetur.</span>
+                <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-6 col-md" id="dynamic-div">
+              <img src="./hex-4.jpg" id="dynamic" class="about-icon">
+              <h4 class="pt-2">Dynamic</h4>
+              <p><span>Lorem ipsum dolor sit amet consectetur.</span>
+                <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="row text-center py-5 my-5">
+            <div class="col-12 about-me">
+              <img id="headshot" src="./Headshot.JPG">
+            </div>
+            <div class="col-12 about-me">
+              <h4 class="pt-4">Who's this guy?</h4>
+              <p class="px-5 bio">Hello! My name is Alex Washington and I'm a highly motivated, self-taught, front-end web developer from Apopka, FL. I began learning to code in April of 2019 and I've been hooked ever since. When I'm not learning new skills in the web dev arena, I like to spend my time reading, writing, playing video games, solving puzzles, working out, and watching movies and sports. I have a strong passion for creating and web development is a fanstastic canvas to express my creativity and bring ideas to life!</p>
+            </div>
+            <div class="col-12 col-md skills-container">
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      HTML</div>
+                  </div>
+                <p class="percentage ml-auto">85%</p>
+              </div>
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      CSS</div>
+                  </div>
+                <p class="percentage ml-auto">75%</p>
+              </div>
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      JavaScript</div>
+                  </div>
+                <p class="percentage ml-auto">65%</p>
+              </div>
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      Bootstrap 4</div>
+                  </div>
+                <p class="percentage ml-auto">80%</p>
+              </div>
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      jQuery</div>
+                  </div>
+                <p class="percentage ml-auto">75%</p>
+              </div>
+              <div class="progress my-3">
+                <div class="progress-bar text-left skill" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-title">
+                      PHP</div>
+                  </div>
+                <p class="percentage ml-auto">70%</p>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="projects-container pt-1 pb-5">  
+        <div class="row text-center my-5 py-4" id="portfolio">
+          <div class="col">
+            <div class="header-div mx-auto d-flex justify-content-center">
+              <h2 id="projects">PROJECTS</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="projects pb-5 mb-5">
+          <div class="container">
+            <div class="row no-gutters">
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-1">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-1.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text">Seana's Caribbean Soul Food <br><span class="languages">HTML/ CSS/ BS4</span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-1">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-2">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-2.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text" id="text-2">Marvel Infinity Saga <br>Fan Page <br><span class="languages">HTML/ CSS/ BS4/ JS/ jQuery</span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-2">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-3">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-3.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text" id="text-3">Mark Washington Basketball <br><span class="languages">HTML /CSS /BS4</span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-3">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-4">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-4.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text" id="text-4">Mark Washington Journalism <br><span class="languages">HTML /CSS /BS4</span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-4">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-5">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-5.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text" id="text-5">Vizzue <br><span class="languages">PHP /CSS /BS4</span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-5">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-6 col-lg-4" id="thumb-6">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <img src="./project-6.jpg" alt="Avatar" class="image embed-responsive-item">
+                </div>
+                <div class="overlay">
+                  <div class="text" id="text-6">Coming Soon... <br><span class="languages"></span></div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn learn-btn" data-toggle="modal" data-target="#modal-6">
+                    LEARN MORE  
+                  </button>
+                </div>
+              </div>
+          
+            </div>
+          </div> 
+          
+          <!-- Modals -->
+          <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="modal-1Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./modals/Seanas/1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Seanas/2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Seanas/3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Seana's Caribbean Soul Food</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href="https://al-byte.github.io/Seanas-Alt/"><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="modal-2Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators2" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./modals/MCU/1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/MCU/2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/MCU/3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Marvel Infinity Saga Fan Page</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href="https://al-byte.github.io/Marvel-Fan-Site/"><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="modal-3Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators3" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./modals/Coaching/1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Coaching/2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Coaching/3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Mark Washington Basketball</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href="https://al-byte.github.io/Coaching/"><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="modal-4Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators4" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./modals/Journalism/1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Journalism/2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Journalism/3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Mark Washington Journalism</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href="https://al-byte.github.io/Journalism/"><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="modal-5Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators5" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./modals/Vizzue/1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Vizzue/2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./modals/Vizzue/3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Vizzue</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href=""><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="modal-6Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators6" class="carousel slide" 
+                data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./project-6.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./project-6.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./project-6.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  <h3 class="modal-title pl-2" id="exampleModalLongTitle">Shiloh Missionary Baptist Church</h3>
+                </div>
+                <div>
+                  <h4 class="modal-title tagline text-left mx-4" id="exampleModalLongTitle">Tagline</h4>
+                </div>   
+                <div>
+                  <p class="modal-title text-left px-4" id="exampleModalLongTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore voluptas perferendis.</p>
+                </div>          
+                
+                <div class="modal-footer">
+                  
+                  <a href=""><button type="button" class="btn view-btn">View Site<i class="fa fa-angle-double-right"></i></button></a>
+                
+                <button type="button" class="close ml-auto py-3 px-4" data-dismiss="modal" aria-label="Close">
+                  <span id="close-btn" aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="row text-center mt-4 pt-5 pb-3" id="contact-container">
+          <div class="col" id="contact">
+            <div class="header-div mx-auto d-flex justify-content-center">
+              <h2>CONTACT</h2>
+            </div>
+          </div>
+      </div>
+      
+      <div class="row text-center  my-2 pb-5">
+          <div class="col">
+            <a href="mailto:alexthewebdev@gmail.com"><img src="./icons/email-icon.png" id="email-icon"></a>
+            <p class="pt-5">Have a question or want to work together?<br>Shoot over an e-mail and let's get started!</p>
+          </div>
+      </div>
+      
+      <div class="row mx-auto text-center d-flex justify-content-center">
+          <div class="col mx-auto text-center d-flex justify-content-center">
+            <a href="#home"><img id="top-icon" src="./top.png"></a>
+          </div>
+      </div>
+        
+      <div class="contact-container row text-center d-flex justify-content-center mx-auto">
+            <div class="col-3 col-sm-2 col-md-1">
+              <a href="https://github.com/Al-byte"><i title="Github" class="contact-icon fa fa-github"></i></a>    
+            </div>
+            <div class="col-3 col-sm-2 col-md-1">
+              <a href="https://www.linkedin.com/in/alex-washington-web-dev/"><i title="LinkedIn" class="contact-icon fa fa-linkedin"></i></a>        
+            </div>
+            <div class="col-3 col-sm-2 col-md-1">
+              <a href="https://www.facebook.com/alex.washington.1291"><i title="Facebook" class="contact-icon fa fa-facebook"></i></a>        
+            </div>
+            <div class="col-3 col-sm-2 col-md-1">
+              <a href="https://www.instagram.com/alexthewebdev/"><i title="Instagram" class="contact-icon fa fa-instagram"></i></a>          
+            </div>
+            <footer class="col-12 text-center mt-4">Alex Washington <span id="copyright"> &copy;2020</span></footer>
+      </div>    
+</body>
+</html>
